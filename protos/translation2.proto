@@ -1,0 +1,16 @@
+syntax = "proto3";
+package protos;
+option go_package = "./translation2";
+
+service Translation2 {
+    rpc Translate2(Translation2Input) returns (Translation2Output);
+}
+
+message Translation2Input {
+    string Text = 1;
+}
+
+message Translation2Output {
+    string Text = 1;
+}
+
